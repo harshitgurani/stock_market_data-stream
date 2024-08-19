@@ -3,10 +3,8 @@ from kiteconnect import KiteTicker,KiteConnect
 
 logging.basicConfig(level=logging.DEBUG)
 
-# kite = KiteConnect(api_key="jhbvurvtrm69sw26")
-# data = kite.generate_session("Gw2mpZ7Wmp9NNbo5ETwEQVg688zRQiem", api_secret="qbyivaiq8enlj0eb10vhtgk2jptdpdvk")
-# kite.set_access_token(data["access_token"])
-kws = KiteTicker("jhbvurvtrm69sw26", "MtUdvdbYHHEvgZW1pEvZZTcCuuFybZc7")
+
+kws = KiteTicker("api_key", "request_token")
 
 def on_ticks(ws, ticks):
     # Callback to receive ticks.
